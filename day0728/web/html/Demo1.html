@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="/day0728/js/jquery-1.124.js"></script>
+</head>
+<body>
+<div id="d1">
+  这是原内容
+</div>
+<button onclick="fun1()">点这里</button>
+</body>
+  <script>
+    function fun1(){
+      $.ajax({
+        //请求地址
+        url:'/day0728/a1',
+        //请求类型
+        type:"get",
+        //d:response对象返回的内容 success：成功的回调
+        success:function (d){
+          $("#d1").html(d)
+        }
+      })
+    }
+  </script>
+</html>

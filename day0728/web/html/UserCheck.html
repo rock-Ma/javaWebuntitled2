@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="/day0728/js/jquery-1.124.js"></script>
+</head>
+<body>
+  用户名：<input type="text"  name="username" onblur="fun1(value)" onfocus="fun2()"><span id = "d1"></span>
+</body>
+<script>
+    //鼠标失去焦点
+    function fun1(v){
+        if(v.trim()!=""){
+            $.get("/day0728/a2",{"username":v},function (d){
+                if(d==1){
+                    $("#d1").html("<font color='red'>用户名已存在</font>")
+                }
+                else {
+                    $("#d1").html("<font color='blue'>√</font>")
+                }
+            })
+        }
+    }
+    //得到焦点
+    function fun2(){
+        $("#d1").html("");
+    }
+
+</script>
+</html>

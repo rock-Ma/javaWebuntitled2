@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<form action="/login/r1" method="post" >
+  <h2>青春不常在,抓紧谈恋爱</h2>
+  <hr>
+  <p>昵称: <input type="text" name="username" placeholder="输入你的名字"></p>
+  <p>性别: <input type="radio" name="sex" value="男" checked>男
+    <input type="radio" name="sex" value="女" >女
+  </p>
+  <p>地区: <select name="location" >
+    <option value="-1">请选择所在地区</option>
+    <option value="华北" >华北</option>
+    <option value="华南">华南</option>
+    <option value="华中" selected>华中</option>
+    <option value="东北" >东北</option>
+    <option value="西北">西北</option>
+    <option value="华东" >华东</option>
+    <option value="西南">西南</option>
+    <option value="港澳台">港澳台</option>
+    <option value="海外">海外</option>
+  </select>
+  </p>
+  <p>喜欢类型:
+    <input type="checkbox" name="hobby" value="可爱">可爱
+    <input type="checkbox" name="hobby" value="御姐">御姐
+    <input type="checkbox" name="hobby" checked value="富婆">富婆
+  </p>
+  <p>
+  <h3>个人介绍</h3>
+  <textarea name="jieshao"  cols="30" rows="6"></textarea>
+  </p>
+  <p><h3>我承诺</h3></p>
+  <ul>
+    <li>本人已年满18岁</li>
+    <li>以上信息皆真实</li>
+    <li>真诚寻找另一半</li>
+  </ul>
+  <p>
+    <input type="checkbox" name="yes" value="1">我同意以上条款
+  </p>
+  <p>
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+  </p>
+</form>
+</center>
+</body>
+</html>

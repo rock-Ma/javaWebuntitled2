@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!--
+    将servlet注册到web容器中
+-->
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.yunhe.servlet.UserServlet</servlet-class>
+        <!--修改servlet的创建时机
+                正整数表示服务器期待的时候就创建该实例对象
+                   从4开始 整数值越小创建servlet对象的优先级越高
+        -->
+        <load-on-startup>4</load-on-startup>
+    </servlet>
+    <!--
+        给已在容器中的Myserlvet_02配置一个访问路径
+    -->
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/m2</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>PlayerServlet</servlet-name>
+        <servlet-class>com.yunhe.servlet.PlayerServlet</servlet-class>
+        <!--修改servlet的创建时机
+                正整数表示服务器期待的时候就创建该实例对象
+                   从4开始 整数值越小创建servlet对象的优先级越高
+        -->
+        <load-on-startup>4</load-on-startup>
+    </servlet>
+    <!--
+        给已在容器中的Myserlvet_02配置一个访问路径
+    -->
+    <servlet-mapping>
+        <servlet-name>PlayerServlet</servlet-name>
+        <url-pattern>/r1</url-pattern>
+    </servlet-mapping>
+</web-app>

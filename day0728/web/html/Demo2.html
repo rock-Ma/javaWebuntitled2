@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="/day0728/js/jquery-1.124.js"></script>
+
+</head>
+<body>
+<div id="d1">
+  这是原内容
+</div>
+<button onclick="fun1()">点这里</button>
+</body>
+<script>
+  function fun1(){
+    $.get("/day0728/a1",{"content":$("#d1").text()},function (d){
+      $("#d1").html(d)
+    },"text")
+  }
+</script>
+</html>

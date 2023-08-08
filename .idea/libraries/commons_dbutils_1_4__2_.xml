@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="commons-dbutils-1.4 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/day09/lib/commons-dbutils-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day09/lib/druid-1.0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day09/lib/mysql-connector-java-5.1.40-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-5.1.40-bin (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/kaoshi/web/lib/mysql-connector-java-5.1.40-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/kaoshi/web/lib/jackson-databind-2.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/kaoshi/web/lib/jackson-core-2.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/kaoshi/web/lib/jackson-annotations-2.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/kaoshi/web/lib/druid-1.0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/kaoshi/web/lib/commons-dbutils-1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
